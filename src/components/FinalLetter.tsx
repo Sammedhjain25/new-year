@@ -583,9 +583,77 @@ export default function FinalLetter({ onRestart }: FinalLetterProps) {
           .font-display { padding: 12px; }
           .kiss-particle { font-size: 18px; }
           
-          /* Hide memory images on very small screens for better mobile experience */
+          /* Reposition memory images for mobile - top and bottom of card */
           .memory-image {
-            display: none;
+            display: block !important;
+            width: 80px !important;
+            height: 80px !important;
+          }
+
+          /* Top row - 5 images */
+          .memory-image:nth-child(1) { /* m1 */
+            top: -100px !important;
+            left: 10px !important;
+            right: auto !important;
+            bottom: auto !important;
+          }
+          .memory-image:nth-child(2) { /* m2 */
+            top: -100px !important;
+            left: 95px !important;
+            right: auto !important;
+            bottom: auto !important;
+          }
+          .memory-image:nth-child(3) { /* m3 */
+            top: -100px !important;
+            left: 50% !important;
+            right: auto !important;
+            bottom: auto !important;
+            transform: translateX(-50%) rotate(-6deg) !important;
+          }
+          .memory-image:nth-child(4) { /* m4 */
+            top: -100px !important;
+            right: 95px !important;
+            left: auto !important;
+            bottom: auto !important;
+          }
+          .memory-image:nth-child(5) { /* m5 */
+            top: -100px !important;
+            right: 10px !important;
+            left: auto !important;
+            bottom: auto !important;
+          }
+
+          /* Bottom row - 5 images */
+          .memory-image:nth-child(6) { /* m6 */
+            bottom: -100px !important;
+            left: 10px !important;
+            right: auto !important;
+            top: auto !important;
+          }
+          .memory-image:nth-child(7) { /* m7 */
+            bottom: -100px !important;
+            left: 95px !important;
+            right: auto !important;
+            top: auto !important;
+          }
+          .memory-image:nth-child(8) { /* m8 */
+            bottom: -100px !important;
+            left: 50% !important;
+            right: auto !important;
+            top: auto !important;
+            transform: translateX(-50%) rotate(6deg) !important;
+          }
+          .memory-image:nth-child(9) { /* m9 */
+            bottom: -100px !important;
+            right: 95px !important;
+            left: auto !important;
+            top: auto !important;
+          }
+          .memory-image:nth-child(10) { /* m10 */
+            bottom: -100px !important;
+            right: 10px !important;
+            left: auto !important;
+            top: auto !important;
           }
         }
 
